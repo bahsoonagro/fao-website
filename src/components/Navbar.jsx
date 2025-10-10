@@ -22,14 +22,14 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <h1 className="text-green-700 font-bold text-xl">FAO AFR100</h1>
+            <h1 className="text-blue-700 font-bold text-xl">FAO AFR100</h1>
           </div>
 
           {/* Mobile toggle */}
           <div className="flex items-center sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-green-700 inline-flex items-center justify-center p-2 rounded-md hover:bg-green-100 focus:outline-none"
+              className="text-blue-700 inline-flex items-center justify-center p-2 rounded-md hover:bg-blue-100 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -65,8 +65,8 @@ export default function Navbar() {
                     to={item.path}
                     className={`${
                       location.pathname === item.path
-                        ? "text-green-900 font-semibold border-b-2 border-green-700 pb-1"
-                        : "text-green-700 hover:text-green-900"
+                        ? "text-blue-900 font-semibold border-b-2 border-blue-700 pb-1"
+                        : "text-blue-700 hover:text-blue-900"
                     }`}
                   >
                     {item.name}
@@ -89,8 +89,8 @@ export default function Navbar() {
               to={item.path}
               className={`block px-3 py-2 rounded ${
                 location.pathname === item.path
-                  ? "bg-green-100 text-green-900 font-semibold"
-                  : "text-green-700 hover:bg-green-100"
+                  ? "bg-blue-100 text-blue-900 font-semibold"
+                  : "text-blue-700 hover:bg-blue-100"
               }`}
             >
               {item.name}
