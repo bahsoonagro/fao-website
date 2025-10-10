@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-700 text-white mt-12">
+    <footer className="bg-blue-700 text-white mt-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-16 py-12 grid md:grid-cols-3 gap-8">
         {/* About */}
         <div>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-green-800 text-center py-4 text-gray-300 text-sm">
+      <div className="bg-blue-800 text-center py-4 text-gray-300 text-sm">
         &copy; {new Date().getFullYear()} FAO Sierra Leone. All rights reserved.
       </div>
     </footer>
