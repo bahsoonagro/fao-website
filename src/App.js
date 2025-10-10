@@ -9,7 +9,6 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import LATassessment from "./pages/LATassessment";
 
-
 export default function App() {
   return (
     <Router>
@@ -17,49 +16,49 @@ export default function App() {
       <header className="bg-white shadow fixed w-full z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-16">
-            <Link to="/" className="text-green-700 font-bold text-xl">
+            <Link to="/" className="text-primary font-bold text-xl">
               FAO Sierra Leone
             </Link>
             <nav className="space-x-4">
               <Link
                 to="/"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 Home
               </Link>
               <Link
                 to="/news"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 News
               </Link>
               <Link
                 to="/projects"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 Projects
               </Link>
               <Link
                 to="/grm"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 GRM
               </Link>
               <Link
                 to="/resources"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 Resources
               </Link>
               <Link
                 to="/gallery"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 Gallery
               </Link>
               <Link
                 to="/contact"
-                className="text-green-700 hover:text-green-800 font-semibold"
+                className="text-primary hover:text-secondary font-semibold"
               >
                 Contact
               </Link>
@@ -85,7 +84,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-green-700 text-white py-6 mt-12">
+      <footer className="bg-primary text-white py-6 mt-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 text-center">
           &copy; {new Date().getFullYear()} FAO Sierra Leone. All rights reserved.
         </div>
@@ -93,4 +92,3 @@ export default function App() {
     </Router>
   );
 }
-
